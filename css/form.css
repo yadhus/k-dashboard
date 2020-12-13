@@ -1,12 +1,130 @@
 .formContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   padding: 16px;
+  overflow-y: auto;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
-  grid-row-gap: 24px; /* fallback support old browser versions and safari */
+  width: 72%;
+  row-gap: 20px;
+  grid-row-gap: 20px; /* fallback support old browser versions and safari */
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: 10;
+}
+
+.confirmPopup {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  background-color: #fdfdfd;
+  row-gap: 16px;
+  z-index: 20;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  grid-row-gap: 8px;
+}
+
+.checkboxField,
+.radioField {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  grid-row-gap: 12px;
+}
+
+.reactjsSkillLevel,
+.angularSkillLevel,
+.pythonSkillLevel,
+.mongodbSkillLevel {
+  display: none;
+  column-gap: 12px;
+  margin-left: 18px;
+  align-items: center;
+}
+
+.skillLevel > p {
+  font-size: 14px;
+}
+
+label {
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  padding: 4px;
+  height: 32px;
+}
+
+.hobbiesList {
+  display: none;
+  column-gap: 8px;
+  grid-column-gap: 8px;
+}
+
+.hobbiesList div {
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 14px;
+  background-color: #ececec;
+}
+
+input[type="submit"] {
+  height: auto;
+  padding: 8px 16px;
+}
+
+select {
+  height: 32px;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 16px;
+  grid-column-gap: 16px;
+}
+
+form button {
+  margin-bottom: 24px;
 }

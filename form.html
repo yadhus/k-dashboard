@@ -31,20 +31,153 @@
         </li>
       </ul>
       <div class="formContainer">
-        <form class="form">
+        <h1>Form</h1>
+        <div class="overlay"></div>
+        <div class="confirmPopup">
+          <h2></h2>
           <div>
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" value="John" />
+            <button type="button" onclick="onSuccessOk()">OK</button>
           </div>
-          <div>
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" value="John" />
+        </div>
+        <form id="personalForm" class="form" method="dialog">
+          <div class="inputField">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
           </div>
-          <div>
-            <input type="submit" value="Submit" />
+          <div class="inputField">
+            <label for="age">Age</label>
+            <input type="date" id="age" name="age" min="1" max="150" />
+          </div>
+          <div class="inputField">
+            <label for="hobbies">Hobbies</label>
+            <input
+              type="text"
+              id="hobbies"
+              name="hobbies"
+              placeholder="Enter to add hobbies"
+            />
+          </div>
+          <div class="hobbiesList"></div>
+          <div class="technologies">
+            <label>Technologies</label>
+            <div class="checkboxField">
+              <input type="checkbox" id="reactjs" />
+              <label for="reactjs">ReactJS</label>
+            </div>
+            <div class="reactjsSkillLevel">
+              <div class="radioField">
+                <input type="radio" name="reactjsLevel" id="reactjsBasic" />
+                <label for="reactjsBasic">Beginner</label>
+              </div>
+              <div class="radioField">
+                <input
+                  type="radio"
+                  name="reactjsLevel"
+                  id="reactjsIntermediate"
+                />
+                <label for="reactjsIntermediate">Intermediate</label>
+              </div>
+              <div class="radioField">
+                <input type="radio" name="reactjsLevel" id="reactjsExpert" />
+                <label for="reactjsExpert">Expert</label>
+              </div>
+            </div>
+            <div class="checkboxField">
+              <input type="checkbox" id="angular" />
+              <label for="angular">Angular</label>
+            </div>
+            <div class="angularSkillLevel">
+              <div class="radioField">
+                <input type="radio" name="angularLevel" id="angularBasic" />
+                <label for="angularBasic">Beginner</label>
+              </div>
+              <div class="radioField">
+                <input
+                  type="radio"
+                  name="angularLevel"
+                  id="angularIntermediate"
+                />
+                <label for="angularIntermediate">Intermediate</label>
+              </div>
+              <div class="radioField">
+                <input type="radio" name="angularLevel" id="angularExpert" />
+                <label for="angularExpert">Expert</label>
+              </div>
+            </div>
+            <div class="checkboxField">
+              <input type="checkbox" id="python" />
+              <label for="python">Python</label>
+            </div>
+            <div class="pythonSkillLevel">
+              <div class="radioField">
+                <input type="radio" name="pythonLevel" id="pythonBasic" />
+                <label for="pythonBasic">Beginner</label>
+              </div>
+              <div class="radioField">
+                <input
+                  type="radio"
+                  name="pythonLevel"
+                  id="pythonIntermediate"
+                />
+                <label for="pythonIntermediate">Intermediate</label>
+              </div>
+              <div class="radioField">
+                <input type="radio" name="pythonLevel" id="pythonExpert" />
+                <label for="pythonExpert">Expert</label>
+              </div>
+            </div>
+            <div class="checkboxField">
+              <input type="checkbox" id="mongodb" />
+              <label for="mongodb">MongoDB</label>
+            </div>
+            <div class="mongodbSkillLevel">
+              <div class="radioField">
+                <input type="radio" name="mongodbLevel" id="mongodbBasic" />
+                <label for="mongodbBasic">Beginner</label>
+              </div>
+              <div class="radioField">
+                <input
+                  type="radio"
+                  name="mongodbLevel"
+                  id="mongodbIntermediate"
+                />
+                <label for="mongodbIntermediate">Intermediate</label>
+              </div>
+              <div class="radioField">
+                <input type="radio" name="mongodbLevel" id="mongodbExpert" />
+                <label for="mongodbExpert">Expert</label>
+              </div>
+            </div>
+          </div>
+          <div class="inputField">
+            <label for="country">Country</label>
+            <select name="country" id="country" size="1">
+              <option value="" selected="selected">Select Country</option>
+            </select>
+          </div>
+          <div class="inputField">
+            <label for="state">State</label>
+            <select name="state" id="state" size="1">
+              <option value="" selected="selected">Select State</option>
+            </select>
+          </div>
+          <div class="inputField">
+            <label for="city">City</label>
+            <select name="city" id="city" size="1">
+              <option value="" selected="selected">Select City</option>
+            </select>
+          </div>
+          <div class="formButtons">
+            <button id="cancel" type="button" onclick="handleFormCancel()">
+              Cancel
+            </button>
+            <button id="submit" type="button" onclick=" handleFormSubmit()">
+              Submit
+            </button>
           </div>
         </form>
       </div>
     </div>
+    <script type="text/javascript" src="./js/form.js"></script>
   </body>
 </html>
