@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/todo.css" />
   </head>
 
   <body>
@@ -29,7 +30,33 @@
           <a href="shape.html"><i class="fa fa-fw fa-scissors"></i></a>
         </li>
       </ul>
-      <div></div>
+      <div class="todoContainer">
+        <div class="todoHeader">
+          <h1>To Do List</h1>
+          <input type="text" id="myInput" placeholder="Todo Item...." />
+          <span onclick="newElement()" class="addBtn">Add Item</span>
+        </div>
+
+        <ul id="todoUL">
+          <li draggable="true" class="draggable todoItems">
+            <div class="fa fa-fw fa-bars"></div>
+            Form
+          </li>
+          <li draggable="true" class="draggable todoItems checked">
+            <div class="fa fa-fw fa-bars"></div>
+            Table view
+          </li>
+          <li draggable="true" class="draggable todoItems checked">
+            <div class="fa fa-fw fa-bars"></div>
+            Todo list
+          </li>
+          <li draggable="true" class="draggable todoItems checked">
+            <div class="fa fa-fw fa-bars"></div>
+            Shape creator
+          </li>
+        </ul>
+      </div>
     </div>
+    <script type="text/javascript" src="./js/todo.js"></script>
   </body>
 </html>
