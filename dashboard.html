@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klenty dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboardContainer">
+      <div class="sidebar">
+        <div class="sidenav">
+          <div class="brand">
+            <a><img src="./assets/images/Brand.svg" /></a>
+          </div>
+          <div class="home selectedNavMenu">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            <div class="homeTooltip">HOME</div>
+          </div>
+          <div>
+            <a><i class="fa fa-fw fa-user"></i></a>
+          </div>
+          <div>
+            <a><i class="fa fa-fw fa-location-arrow"></i></a>
+          </div>
+          <div>
+            <a><i class="fa fa-fw fa-calendar-check-o"></i></a>
+          </div>
+          <div>
+            <a><i class="fa fa-fw fa-envelope"></i></a>
+          </div>
+          <div>
+            <a><i class="fa fa-fw fa-phone"></i></a>
+          </div>
+          <div>
+            <a><i class="fa fa-fw fa-line-chart"></i></a>
+          </div>
+          <div>
+            <a><i class="fa fa-fw fa-cogs"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="contentContainer">
+        <div class="header">
+          <div class="pageName">Home</div>
+          <div class="headerUserDetails">
+            <i class="fa fa-fw fa-bell"></i>
+            <div id="profile">
+              <img
+                src="https://lh3.googleusercontent.com/a-/AOh14Gg4gvnqfMs2ju5MH5l78ziizjH4-dtd9HvhnRpQXQ=s96-c"
+                alt="Avatar"
+                class="avatar"
+              />
+              <div class="dropdownMenu">
+                <div class="personalDetails">
+                  <div>Yadhunandan S</div>
+                  <div>s.yadhunandan@gmail.com</div>
+                </div>
+                <div class="extraMenu">
+                  <div><i class="fa fa-fw fa-gift"></i>What's New?</div>
+                  <div><i class="fa fa-fw fa-heart"></i>Refer a friend</div>
+                  <div><i class="fa fa-fw fa-cog"></i>Settings</div>
+                  <div><i class="fa fa-fw fa-sign-out"></i>Sign out</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dataContainer">
+          <div class="leftDataContainer">
+            <div class="emailSentContainer">
+              <div class="dataContainerHeader">
+                <div class="headerText">
+                  <i class="fa fa-fw fa-paper-plane"></i>
+                  <span>EMAILS SENT</span>
+                  <span>Last 7 days</span>
+                </div>
+                <div class="count">0</div>
+              </div>
+              <div class="emailChartContainer">
+                <div class="bar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="dateRow">
+                  <div>Dec 14</div>
+                  <div>Dec 15</div>
+                  <div>Dec 16</div>
+                  <div>Dec 17</div>
+                  <div>Dec 18</div>
+                  <div>Dec 19</div>
+                </div>
+              </div>
+            </div>
+            <div class="emailScheduledContainer">
+              <div class="dataContainerHeader">
+                <div class="headerText">
+                  <i class="fa fa-fw fa-clock-o"></i
+                  ><span>EMAILS SCHEDULED</span>
+                </div>
+                <div class="count">0</div>
+              </div>
+              <div class="countStats">
+                <div class="dayCount">
+                  <div class="count">0</div>
+                  <div>Today</div>
+                </div>
+                <div class="dayCount">
+                  <div class="count">0</div>
+                  <div>Upcoming</div>
+                </div>
+                <div class="dayCount">
+                  <div class="count">0</div>
+                  <div>Awaiting Approval</div>
+                </div>
+                <div class="countExtras">
+                  <div class="count">0</div>
+                  <div>Errors</div>
+                </div>
+              </div>
+            </div>
+            <div class="taskScheduledContainer">
+              <div class="dataContainerHeader">
+                <div class="headerText">
+                  <i class="fa fa-fw fa-calendar-check-o"></i
+                  ><span>TASKS SCHEDULED</span>
+                </div>
+                <div class="count">5</div>
+              </div>
+              <div class="countStats">
+                <div class="dayCount">
+                  <div class="count">0</div>
+                  <div>Today</div>
+                </div>
+                <div class="dayCount">
+                  <div class="count">0</div>
+                  <div>Upcoming</div>
+                </div>
+                <div></div>
+                <div class="countExtras">
+                  <div class="count">5</div>
+                  <div>Overdue</div>
+                </div>
+              </div>
+            </div>
+            <div class="callScheduledContainer">
+              <div class="dataContainerHeader">
+                <div class="headerText">
+                  <i class="fa fa-fw fa-phone"></i>
+                  <span>CALLS SCHEDULED</span>
+                </div>
+                <div class="count">0</div>
+              </div>
+              <div class="countStats">
+                <div class="dayCount">
+                  <div class="count">0</div>
+                  <div>Today</div>
+                </div>
+                <div class="dayCount">
+                  <div class="count">0</div>
+                  <div>Upcoming</div>
+                </div>
+                <div></div>
+                <div class="countExtras">
+                  <div class="count">0</div>
+                  <div>Overdue</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightDataContainer">
+            <div class="heading">Live feed</div>
+            <div class="toolbar">
+              <div class="leftTools">
+                <select>
+                  <option>ALL</option>
+                </select>
+                <div class="iconButton">
+                  <i class="fa fa-fw fa-filter"></i>
+                </div>
+              </div>
+              <div class="rightTools">
+                <div class="searchInput">
+                  <i class="fa fa-fw fa-search"></i>
+                  <input placeholder="Search" />
+                </div>
+                <div class="iconButton">
+                  <i class="fa fa-fw fa-download"></i>
+                </div>
+                <div class="iconButton">
+                  <i class="fa fa-fw fa-refresh"></i>
+                </div>
+              </div>
+            </div>
+            <div class="notificationContainer">
+              <div>
+                <img src="/assets/images/NoNotification.png" />
+              </div>
+              <div class="notificationHeading">No notifications yet</div>
+              <div class="notificationContent">
+                You'll start seeing real time notifications here when your
+                emails are opened, clicked, or <br />
+                replied to.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
