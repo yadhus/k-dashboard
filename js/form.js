@@ -110,7 +110,7 @@ dobInput.onchange = function () {
 
   cometEl.innerHTML = "";
   const cometText = document.createTextNode(
-    `Its been ${diffDays} days since last halley's comet and your next birthday`
+    `Its been ${diffDays} days since last halley's comet to your next birthday`
   );
   cometEl.style.display = "flex";
   cometEl.appendChild(cometText);

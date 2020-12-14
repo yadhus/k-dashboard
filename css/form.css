@@ -13,8 +13,13 @@
   display: flex;
   flex-direction: column;
   width: 72%;
-  row-gap: 20px;
-  grid-row-gap: 20px; /* fallback support old browser versions and safari */
+  /* row-gap: 20px; */
+  /* grid-row-gap: 20px;  */
+}
+
+/* fallback support old browser versions and safari */
+.form > div {
+  margin-bottom: 20px;
 }
 
 .overlay {
@@ -47,23 +52,38 @@
 .inputField {
   display: flex;
   flex-direction: column;
-  row-gap: 8px;
-  grid-row-gap: 8px;
+  /* row-gap: 8px;
+  grid-row-gap: 8px; */
+}
+
+/* fallback support old browser versions and safari */
+.inputField > * {
+  margin-bottom: 8px;
 }
 
 .checkboxField,
 .radioField {
   display: flex;
   align-items: center;
-  column-gap: 8px;
-  grid-column-gap: 8px;
+  /* column-gap: 8px;
+  grid-column-gap: 8px; */
+}
+
+.checkboxField > *,
+.radioField > * {
+  margin-right: 8px;
 }
 
 .technologies {
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
-  grid-row-gap: 12px;
+  /* row-gap: 12px;
+  grid-row-gap: 12px; */
+}
+
+/* fallback support old browser versions and safari */
+.technologies > * {
+  margin-bottom: 12px;
 }
 
 .reactjsSkillLevel,
@@ -100,8 +120,13 @@ input[type="date"] {
 
 .hobbiesList {
   display: none;
-  column-gap: 8px;
-  grid-column-gap: 8px;
+  /* column-gap: 8px;
+  grid-column-gap: 8px; */
+}
+
+/* fallback support old browser versions and safari */
+.hobbiesList > * {
+  margin-right: 8px;
 }
 
 .hobbiesList div {
@@ -124,8 +149,13 @@ select {
 .formButtons {
   display: flex;
   justify-content: flex-end;
-  column-gap: 16px;
-  grid-column-gap: 16px;
+  /* column-gap: 16px;
+  grid-column-gap: 16px; */
+}
+
+/* fallback support old browser versions and safari */
+.formButtons > * {
+  margin-right: 16px;
 }
 
 form button {
