@@ -76,6 +76,7 @@ body {
 }
 
 .sidenav div > a,
+.sidenav > a,
 .sidenavBottom div > a {
   text-decoration: none;
   font-size: 22px;
@@ -90,6 +91,7 @@ body {
 }
 
 .sidenav div:hover a,
+.sidenav a div:hover,
 .sidenavBottom div:hover a {
   color: #f9fcff;
 }
@@ -98,6 +100,7 @@ body {
   background-color: #ffffff;
 }
 
+.sidenav > a .selectedNavMenu,
 .sidenav .selectedNavMenu > a {
   color: #5d9bf0;
 }
@@ -113,6 +116,7 @@ body {
   background-color: #000000;
   color: #ffffff;
   z-index: 1000;
+  font-size: 16px;
 }
 
 .home:hover .homeTooltip {
